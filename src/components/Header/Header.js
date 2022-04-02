@@ -1,15 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import CustomLink from '../CustomLink/CustomLink';
 import './Header.css';
 
 const Header = () => {
     return (
         <div>
             <h2>Welcome to Tshirt Mania!!</h2>
-            <nav>
-                <Link to="/home">Home</Link>
-                <Link to="/orderreview">Order Review</Link>
-                <Link to="/grandpa">GrandPa</Link>
+            <nav style={{ display: 'flex', justifyContent: 'center' }}>
+                <CustomLink to="/home">Home</CustomLink>
+                <CustomLink to="/orderreview">Order Review</CustomLink>
+                <CustomLink to="/grandpa">GrandPa</CustomLink>
             </nav>
         </div>
     );
