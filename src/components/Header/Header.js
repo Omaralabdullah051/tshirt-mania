@@ -5,7 +5,7 @@ import './Header.css';
 const Header = () => {
     return (
         <div>
-            <h2>Welcome to TShirt Mania!!!</h2>
+            <h2>Welcome to Tshirt Mania!!</h2>
             <nav>
                 <Link to="/home">Home</Link>
                 <Link to="/orderreview">Order Review</Link>

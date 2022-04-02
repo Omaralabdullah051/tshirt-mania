@@ -2,16 +2,12 @@ import React, { useContext } from 'react';
 import { RingContext } from '../Grandpa/Grandpa';
 
 const Aunty = () => {
-    const [house, setHouse] = useContext(RingContext);
-    const handleHouseIncrease = () =>{
-        const newHouseCount = house + 1;
-        setHouse(newHouseCount);
-    }
+    const [house, setHouse] = useContext(RingContext)
     return (
         <div>
             <h4>Aunty</h4>
-            <p>House: {house}</p>
-            {house >4 && <button onClick={handleHouseIncrease}>Aunty Magic</button>}
+            <p>house:{house}</p>
+            <button onClick={() => setHouse((prevState) => (prevState + 1))}>Add a house</button>
         </div>
     );
 };

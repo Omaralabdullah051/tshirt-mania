@@ -1,9 +1,8 @@
 import React from 'react';
 import './TShirt.css';
 
-const TShirt = ({handleAddToCart, tShirt}) => {
-    
-    const {name, picture, price} = tShirt;
+const TShirt = ({ handleAddToCart, tShirt }) => {
+    const { name, picture, price } = tShirt;
     return (
         <div className='t-shirt'>
             <img src={picture} alt="" />
